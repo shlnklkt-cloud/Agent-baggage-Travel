@@ -106,7 +106,10 @@ const LoginPage = ({ onLogin }) => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition-colors disabled:opacity-50"
+              style={{ backgroundColor: loading ? undefined : '#F96302' }}
+              className="w-full hover:opacity-90 text-white font-semibold py-3 rounded-lg transition-all disabled:opacity-50"
+              onMouseEnter={(e) => !loading && (e.target.style.backgroundColor = '#E05602')}
+              onMouseLeave={(e) => !loading && (e.target.style.backgroundColor = '#F96302')}
             >
               {loading ? "Logging in..." : "Login"}
             </button>
