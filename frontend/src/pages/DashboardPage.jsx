@@ -2965,10 +2965,11 @@ const DashboardPage = ({ user, onLogout }) => {
       <header className="bg-orange-500 py-3 border-b border-orange-400 flex-shrink-0">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-              <div className="w-6 h-6 bg-orange-500 rounded-full" />
-            </div>
-            <span className="text-white text-xl font-bold">Income Insurance</span>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_luggage-tracker-4/artifacts/lyzf6y27_image.png" 
+              alt="Income Insurance" 
+              className="h-10 w-auto"
+            />
           </div>
           <div className="text-center flex items-center gap-2">
             <img 
