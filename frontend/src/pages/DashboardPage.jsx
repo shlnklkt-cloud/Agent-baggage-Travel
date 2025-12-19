@@ -3184,7 +3184,8 @@ const DashboardPage = ({ user, onLogout }) => {
                 />
                 <button
                   onClick={() => fileInputRef.current?.click()}
-                  className={`flex items-center gap-2 ${currentStep === "upload-document-baggage-loss" ? "bg-amber-500 hover:bg-amber-600" : "bg-orange-500 hover:bg-orange-600"} text-white rounded-lg px-6 py-3 transition-colors`}
+                  style={{ backgroundColor: currentStep === "upload-document-baggage-loss" ? '#F59E0B' : '#F96302' }}
+                  className="flex items-center gap-2 hover:opacity-90 text-white rounded-lg px-6 py-3 transition-all"
                 >
                   <Upload className="w-5 h-5" />
                   <span className="font-medium">Upload PIR Document</span>
