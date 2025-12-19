@@ -526,11 +526,20 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "agent",
       agent: "baggage-loss",
-      content: `Thank you for selecting flight ${flight}. How long has your baggage been delayed? Please select from the options below:`,
+      content: `Thank you for selecting flight ${flight}. To process your claim, I'll need you to upload your Property Irregularity Report (PIR) document. This is the report you received from the airline when you reported the baggage issue.`,
+    });
+
+    await delay(1000);
+
+    addMessage({
+      type: "agent",
+      agent: "baggage-loss",
+      content: "Please upload your PIR document:",
     });
 
     setIsTyping(false);
-    setCurrentStep("ask-delay-hours-baggage-loss");
+    setDelayHours(0); // Set default for baggage loss
+    setCurrentStep("upload-document-baggage-loss");
   };
 
   const handleDelayHoursSubmit = async (hours) => {
