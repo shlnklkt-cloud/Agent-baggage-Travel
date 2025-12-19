@@ -1,4 +1,4 @@
-from fastapi import FastAPI, APIRouter
+from fastapi import FastAPI, APIRouter, HTTPException
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -6,9 +6,10 @@ import os
 import logging
 from pathlib import Path
 from pydantic import BaseModel, Field, ConfigDict
-from typing import List
+from typing import List, Optional, Dict
 import uuid
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+import random
 
 
 ROOT_DIR = Path(__file__).parent
@@ -26,45 +27,198 @@ app = FastAPI()
 api_router = APIRouter(prefix="/api")
 
 
-# Define Models
-class StatusCheck(BaseModel):
-    model_config = ConfigDict(extra="ignore")  # Ignore MongoDB's _id field
+# Models
+class LoginRequest(BaseModel):
+    passport_number: str
+    policy_number: str
+
+class UserProfile(BaseModel):
+    name: str
+    passport_number: str
+    policy_number: str
+    policy_type: str
+    policy_status: str
+
+class FlightSegment(BaseModel):
+    flight_number: str
+    route: str
+    date: str
+    airline: str
+    journey_type: str
+
+class ItineraryResponse(BaseModel):
+    passenger_name: str
+    segments: List[FlightSegment]
+
+class BaggageClaimRequest(BaseModel):
+    flight_number: str
+    delay_hours: Optional[int] = 6
+    description: Optional[str] = ""
+
+class ClaimResponse(BaseModel):
+    claim_id: str
+    status: str
+    message: str
+    compensation_amount: Optional[float] = None
+    currency: str = "SGD"
+
+
+# Test users database
+TEST_USERS = {
+    "CSGHY654JK": {
+        "name": "Rachel Ng",
+        "passport_number": "CSGHY654JK",
+        "policy_number": "TRV-2026-001487",
+        "policy_type": "Income Travel Insurance - Premier Plan",
+        "policy_status": "ACTIVE"
+    },
+    "CSGHY456JK": {
+        "name": "Broker Account",
+        "passport_number": "CSGHY456JK",
+        "policy_number": "TRV-2026-001687",
+        "policy_type": "Income Travel Insurance - Business Plan",
+        "policy_status": "ACTIVE"
+    }
+}
+
+# Function to generate dynamic itinerary dates
+def get_dynamic_itinerary():
+    from datetime import datetime, timedelta
+    today = datetime.now()
+    today_str = today.strftime("%d %b %Y")
+    future_str = (today + timedelta(days=3)).strftime("%d %b %Y")
     
-    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
-    client_name: str
-    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    return {
+        "CSGHY654JK": [
+            {
+                "flight_number": "SQ882",
+                "route": "SIN → HAK",
+                "date": today_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Outward"
+            },
+            {
+                "flight_number": "NH886",
+                "route": "HAK → NRT",
+                "date": today_str,
+                "airline": "All Nippon Airways",
+                "journey_type": "Outward"
+            },
+            {
+                "flight_number": "NH885",
+                "route": "NRT → HAK",
+                "date": future_str,
+                "airline": "All Nippon Airways",
+                "journey_type": "Return"
+            },
+            {
+                "flight_number": "SQ883",
+                "route": "HAK → SIN",
+                "date": future_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Return"
+            }
+        ],
+        "CSGHY456JK": [
+            {
+                "flight_number": "SQ318",
+                "route": "SIN → LHR",
+                "date": "18 Dec 2025",
+                "airline": "Singapore Airlines",
+                "journey_type": "Outward"
+            },
+            {
+                "flight_number": "BA15",
+                "route": "LHR → SIN",
+                "date": "22 Dec 2025",
+                "airline": "British Airways",
+                "journey_type": "Return"
+            }
+        ]
+    }
 
-class StatusCheckCreate(BaseModel):
-    client_name: str
+# Static reference for backward compatibility
+TEST_ITINERARIES = get_dynamic_itinerary()
 
-# Add your routes to the router instead of directly to app
+
+# API Endpoints
 @api_router.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Income Insurance Claims API v1.0"}
 
-@api_router.post("/status", response_model=StatusCheck)
-async def create_status_check(input: StatusCheckCreate):
-    status_dict = input.model_dump()
-    status_obj = StatusCheck(**status_dict)
-    
-    # Convert to dict and serialize datetime to ISO string for MongoDB
-    doc = status_obj.model_dump()
-    doc['timestamp'] = doc['timestamp'].isoformat()
-    
-    _ = await db.status_checks.insert_one(doc)
-    return status_obj
 
-@api_router.get("/status", response_model=List[StatusCheck])
-async def get_status_checks():
-    # Exclude MongoDB's _id field from the query results
-    status_checks = await db.status_checks.find({}, {"_id": 0}).to_list(1000)
+@api_router.post("/login")
+async def login(request: LoginRequest):
+    """Login with passport and policy number"""
+    user = TEST_USERS.get(request.passport_number)
     
-    # Convert ISO string timestamps back to datetime objects
-    for check in status_checks:
-        if isinstance(check['timestamp'], str):
-            check['timestamp'] = datetime.fromisoformat(check['timestamp'])
+    if not user:
+        raise HTTPException(status_code=401, detail="Invalid credentials")
     
-    return status_checks
+    if user["policy_number"] != request.policy_number:
+        raise HTTPException(status_code=401, detail="Invalid credentials")
+    
+    return {
+        "success": True,
+        "user": user
+    }
+
+
+@api_router.get("/itinerary/{passport_number}")
+async def get_itinerary(passport_number: str):
+    """Get travel itinerary for a passenger"""
+    user = TEST_USERS.get(passport_number)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    # Get fresh dynamic itinerary with current dates
+    dynamic_itineraries = get_dynamic_itinerary()
+    segments = dynamic_itineraries.get(passport_number, [])
+    
+    return {
+        "passenger_name": user["name"],
+        "segments": segments
+    }
+
+
+@api_router.post("/claim/baggage")
+async def file_baggage_claim(request: BaggageClaimRequest, passport_number: str):
+    """File a baggage delay claim"""
+    user = TEST_USERS.get(passport_number)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    claim_id = f"CLM-TRV-2026-{random.randint(100000, 999999)}"
+    compensation = 150.00 if request.delay_hours and request.delay_hours >= 6 else 0
+    
+    return {
+        "claim_id": claim_id,
+        "status": "APPROVED" if compensation > 0 else "PENDING_REVIEW",
+        "message": f"Your baggage delay claim for flight {request.flight_number} has been processed.",
+        "compensation_amount": compensation,
+        "currency": "SGD"
+    }
+
+
+@api_router.get("/policy/{policy_number}")
+async def get_policy_details(policy_number: str):
+    """Get policy details"""
+    for user in TEST_USERS.values():
+        if user["policy_number"] == policy_number:
+            return {
+                "policy_number": user["policy_number"],
+                "policy_holder": user["name"],
+                "policy_type": user["policy_type"],
+                "status": user["policy_status"],
+                "coverage": {
+                    "baggage_delay": {"limit": 500, "currency": "SGD"},
+                    "lost_documents": {"limit": 1000, "currency": "SGD"},
+                    "medical_emergency": {"limit": 500000, "currency": "SGD"}
+                }
+            }
+    
+    raise HTTPException(status_code=404, detail="Policy not found")
+
 
 # Include the router in the main app
 app.include_router(api_router)
