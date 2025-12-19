@@ -2755,6 +2755,7 @@ const DashboardPage = ({ user, onLogout }) => {
         );
 
       case "claim-initiated":
+        const isBaggageDelayed = message.data.delayHours !== null && message.data.delayHours !== undefined && typeof message.data.delayHours === 'number';
         return (
           <div key={message.id} className="ml-13 mb-4">
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 max-w-md">
@@ -2765,13 +2766,15 @@ const DashboardPage = ({ user, onLogout }) => {
               <p className="text-sm text-gray-700">
                 Claim Reference: <strong>{message.data.claimNumber}</strong>
               </p>
-              <p className="text-sm text-gray-700">
-                Flight: <strong>{message.data.flightNumber}</strong>
-              </p>
-              {message.data.delayHours !== null && message.data.delayHours !== undefined && typeof message.data.delayHours === 'number' && (
-                <p className="text-sm text-gray-700">
-                  Reported Delay: <strong>{message.data.delayHours} hours</strong>
-                </p>
+              {isBaggageDelayed && (
+                <>
+                  <p className="text-sm text-gray-700">
+                    Flight: <strong>{message.data.flightNumber}</strong>
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    Reported Delay: <strong>{message.data.delayHours} hours</strong>
+                  </p>
+                </>
               )}
             </div>
           </div>
