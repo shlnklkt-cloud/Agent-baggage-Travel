@@ -3007,7 +3007,8 @@ const DashboardPage = ({ user, onLogout }) => {
         <div className="flex justify-end mb-2 flex-shrink-0">
           <button
             onClick={handleInitiateNewClaim}
-            className="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg px-4 py-2 transition-colors shadow-md"
+            style={{ backgroundColor: '#F96302' }}
+            className="flex items-center gap-2 hover:opacity-90 text-white rounded-lg px-4 py-2 transition-all shadow-md"
             data-testid="initiate-new-claim-btn"
           >
             <RefreshCw className="w-4 h-4" />
