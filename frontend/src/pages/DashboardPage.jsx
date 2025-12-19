@@ -2768,9 +2768,11 @@ const DashboardPage = ({ user, onLogout }) => {
               <p className="text-sm text-gray-700">
                 Flight: <strong>{message.data.flightNumber}</strong>
               </p>
-              <p className="text-sm text-gray-700">
-                Reported Delay: <strong>{message.data.delayHours} hours</strong>
-              </p>
+              {message.data.delayHours !== null && message.data.delayHours !== undefined && typeof message.data.delayHours === 'number' && (
+                <p className="text-sm text-gray-700">
+                  Reported Delay: <strong>{message.data.delayHours} hours</strong>
+                </p>
+              )}
             </div>
           </div>
         );
