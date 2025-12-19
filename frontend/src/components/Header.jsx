@@ -9,10 +9,11 @@ const Header = ({ isLive, passengerName }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="income-logo" data-testid="income-logo">
-            <div className="income-logo-icon">
-              <Shield className="w-6 h-6" />
-            </div>
-            <span>Income Insurance</span>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_luggage-tracker-4/artifacts/lyzf6y27_image.png" 
+              alt="Income Insurance" 
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Center - Title */}
