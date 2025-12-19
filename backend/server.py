@@ -311,7 +311,7 @@ async def file_baggage_claim(request: BaggageClaimRequest, passport_number: str)
         "status": "APPROVED" if compensation > 0 else "PENDING_REVIEW",
         "message": f"Your baggage delay claim for flight {request.flight_number} has been processed.",
         "compensation_amount": compensation,
-        "currency": "SGD"
+        "currency": "$"
     }
 
 
