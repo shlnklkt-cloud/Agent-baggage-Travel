@@ -78,6 +78,41 @@ TEST_USERS = {
         "policy_number": "TRV-2026-001687",
         "policy_type": "Income Travel Insurance - Business Plan",
         "policy_status": "ACTIVE"
+    },
+    "CSGHY623JK": {
+        "name": "Mei Ling Chen",
+        "passport_number": "CSGHY623JK",
+        "policy_number": "INC-TRV-2024-79045",
+        "policy_type": "Income Travel Insurance - Premier Plan",
+        "policy_status": "ACTIVE"
+    },
+    "CSGHY622JK": {
+        "name": "Cheryl Chan",
+        "passport_number": "CSGHY622JK",
+        "policy_number": "INC-TRV-2024-79145",
+        "policy_type": "Income Travel Insurance - Premier Plan",
+        "policy_status": "ACTIVE"
+    },
+    "CSGHY664JK": {
+        "name": "Elizabeth Choy",
+        "passport_number": "CSGHY664JK",
+        "policy_number": "INC-TRV-2024-79245",
+        "policy_type": "Income Travel Insurance - Premier Plan",
+        "policy_status": "ACTIVE"
+    },
+    "CSGHY224JK": {
+        "name": "Kelly Pan",
+        "passport_number": "CSGHY224JK",
+        "policy_number": "INC-TRV-2024-78946",
+        "policy_type": "Income Travel Insurance - Premier Plan",
+        "policy_status": "ACTIVE"
+    },
+    "CSGHY304JK": {
+        "name": "Sophia Poh",
+        "passport_number": "CSGHY304JK",
+        "policy_number": "INC-TRV-2024-79747",
+        "policy_type": "Income Travel Insurance - Premier Plan",
+        "policy_status": "ACTIVE"
     }
 }
 
