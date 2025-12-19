@@ -326,9 +326,9 @@ async def get_policy_details(policy_number: str):
                 "policy_type": user["policy_type"],
                 "status": user["policy_status"],
                 "coverage": {
-                    "baggage_delay": {"limit": 500, "currency": "SGD"},
-                    "lost_documents": {"limit": 1000, "currency": "SGD"},
-                    "medical_emergency": {"limit": 500000, "currency": "SGD"}
+                    "baggage_delay": {"limit": 500, "currency": "$"},
+                    "lost_documents": {"limit": 1000, "currency": "$"},
+                    "medical_emergency": {"limit": 500000, "currency": "$"}
                 }
             }
     
