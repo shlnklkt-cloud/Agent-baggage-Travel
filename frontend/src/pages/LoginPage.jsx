@@ -35,7 +35,7 @@ const LoginPage = ({ onLogin }) => {
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#C2E6F5' }}>
       {/* Header */}
-      <header style={{ backgroundColor: '#F96302' }} className="py-4">
+      <header style={{ backgroundColor: '#FF7E00' }} className="py-4">
         <div className="max-w-7xl mx-auto px-4 flex items-center gap-3">
           <img 
             src="https://customer-assets.emergentagent.com/job_luggage-tracker-4/artifacts/17l1tx1m_image.png" 
