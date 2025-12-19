@@ -2962,7 +2962,7 @@ const DashboardPage = ({ user, onLogout }) => {
   return (
     <div className="h-screen overflow-hidden flex flex-col" style={{ backgroundColor: '#C2E6F5' }}>
       {/* Header */}
-      <header className="bg-orange-500 py-3 border-b border-orange-400 flex-shrink-0">
+      <header style={{ backgroundColor: '#F96302', borderBottom: '1px solid #E05602' }} className="py-3 flex-shrink-0">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img 
