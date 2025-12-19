@@ -76,7 +76,7 @@ const PolicyPanel = ({ policyData, claimData, paymentData }) => {
                       <span className={`text-xs font-semibold ${
                         key === "flight_cancellation" ? "text-green-700" : "text-slate-700"
                       }`}>
-                        SGD {value.limit.toLocaleString()}
+                        $ {value.limit.toLocaleString()}
                       </span>
                     </div>
                   ))}
