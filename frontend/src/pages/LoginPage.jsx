@@ -38,7 +38,7 @@ const LoginPage = ({ onLogin }) => {
       <header className="bg-orange-500 py-4">
         <div className="max-w-7xl mx-auto px-4 flex items-center gap-3">
           <img 
-            src="https://customer-assets.emergentagent.com/job_luggage-tracker-4/artifacts/lyzf6y27_image.png" 
+            src="https://customer-assets.emergentagent.com/job_luggage-tracker-4/artifacts/17l1tx1m_image.png" 
             alt="Income Insurance" 
             className="h-10 w-auto"
           />

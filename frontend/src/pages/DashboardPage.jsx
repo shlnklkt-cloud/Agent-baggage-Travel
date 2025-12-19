@@ -2966,7 +2966,7 @@ const DashboardPage = ({ user, onLogout }) => {
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img 
-              src="https://customer-assets.emergentagent.com/job_luggage-tracker-4/artifacts/lyzf6y27_image.png" 
+              src="https://customer-assets.emergentagent.com/job_luggage-tracker-4/artifacts/17l1tx1m_image.png" 
               alt="Income Insurance" 
               className="h-10 w-auto"
             />

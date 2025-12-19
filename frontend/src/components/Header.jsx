@@ -10,7 +10,7 @@ const Header = ({ isLive, passengerName }) => {
           {/* Logo */}
           <div className="income-logo" data-testid="income-logo">
             <img 
-              src="https://customer-assets.emergentagent.com/job_luggage-tracker-4/artifacts/lyzf6y27_image.png" 
+              src="https://customer-assets.emergentagent.com/job_luggage-tracker-4/artifacts/17l1tx1m_image.png" 
               alt="Income Insurance" 
               className="h-10 w-auto"
             />
