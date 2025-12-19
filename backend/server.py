@@ -169,6 +169,86 @@ def get_dynamic_itinerary():
                 "airline": "British Airways",
                 "journey_type": "Return"
             }
+        ],
+        "CSGHY623JK": [
+            {
+                "flight_number": "SQ636",
+                "route": "SIN → BKK",
+                "date": today_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Outward"
+            },
+            {
+                "flight_number": "SQ637",
+                "route": "BKK → SIN",
+                "date": future_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Return"
+            }
+        ],
+        "CSGHY622JK": [
+            {
+                "flight_number": "SQ178",
+                "route": "SIN → SYD",
+                "date": today_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Outward"
+            },
+            {
+                "flight_number": "SQ179",
+                "route": "SYD → SIN",
+                "date": future_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Return"
+            }
+        ],
+        "CSGHY664JK": [
+            {
+                "flight_number": "SQ254",
+                "route": "SIN → HKG",
+                "date": today_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Outward"
+            },
+            {
+                "flight_number": "SQ255",
+                "route": "HKG → SIN",
+                "date": future_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Return"
+            }
+        ],
+        "CSGHY224JK": [
+            {
+                "flight_number": "SQ231",
+                "route": "SIN → CDG",
+                "date": today_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Outward"
+            },
+            {
+                "flight_number": "SQ232",
+                "route": "CDG → SIN",
+                "date": future_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Return"
+            }
+        ],
+        "CSGHY304JK": [
+            {
+                "flight_number": "SQ828",
+                "route": "SIN → NRT",
+                "date": today_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Outward"
+            },
+            {
+                "flight_number": "SQ829",
+                "route": "NRT → SIN",
+                "date": future_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Return"
+            }
         ]
     }
 
