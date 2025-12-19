@@ -132,6 +132,17 @@ const LoginPage = ({ onLogin }) => {
               Policy: <code className="bg-green-100 px-2 py-0.5 rounded text-green-700">TRV-2026-001687</code>
             </p>
           </div>
+          
+          {/* New Test Credentials */}
+          <div className="mt-3 p-4 bg-purple-50 rounded-lg border border-purple-200">
+            <p className="text-sm font-semibold text-gray-700 mb-2">Test Credentials (Mei Ling Chen):</p>
+            <p className="text-sm text-gray-600">
+              Passport: <code className="bg-purple-100 px-2 py-0.5 rounded text-purple-700">CSGHY623JK</code>
+            </p>
+            <p className="text-sm text-gray-600">
+              Policy: <code className="bg-purple-100 px-2 py-0.5 rounded text-purple-700">INC-TRV-2024-79045</code>
+            </p>
+          </div>
         </div>
       </main>
 
