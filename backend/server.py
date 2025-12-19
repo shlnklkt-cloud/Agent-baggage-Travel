@@ -60,7 +60,7 @@ class ClaimResponse(BaseModel):
     status: str
     message: str
     compensation_amount: Optional[float] = None
-    currency: str = "SGD"
+    currency: str = "$"
 
 
 # Test users database
