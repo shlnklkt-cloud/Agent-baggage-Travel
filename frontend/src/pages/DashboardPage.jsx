@@ -3097,9 +3097,10 @@ const DashboardPage = ({ user, onLogout }) => {
                 <button
                   onClick={() => handleFlightClick(selectedFlight)}
                   disabled={!selectedFlight}
-                  className={`flex items-center gap-2 px-6 py-3 rounded-lg transition-colors ${
+                  style={{ backgroundColor: selectedFlight ? '#F96302' : undefined }}
+                  className={`flex items-center gap-2 px-6 py-3 rounded-lg transition-all ${
                     selectedFlight
-                      ? "bg-orange-500 hover:bg-orange-600 text-white"
+                      ? "hover:opacity-90 text-white"
                       : "bg-gray-200 text-gray-400 cursor-not-allowed"
                   }`}
                   data-testid="confirm-flight-btn"
