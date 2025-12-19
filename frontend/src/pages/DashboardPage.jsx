@@ -4103,10 +4103,11 @@ const DashboardPage = ({ user, onLogout }) => {
               <button
                 onClick={handleSendMessage}
                 disabled={currentStep === "ask-delay-hours" || currentStep === "ask-delay-hours-baggage-loss"}
-                className={`p-3 rounded-lg transition-colors ${
+                style={{ backgroundColor: (currentStep === "ask-delay-hours" || currentStep === "ask-delay-hours-baggage-loss") ? undefined : '#F96302' }}
+                className={`p-3 rounded-lg transition-all ${
                   (currentStep === "ask-delay-hours" || currentStep === "ask-delay-hours-baggage-loss")
                     ? "bg-gray-300 cursor-not-allowed"
-                    : "bg-orange-500 hover:bg-orange-600 text-white"
+                    : "hover:opacity-90 text-white"
                 }`}
               >
                 <Send className="w-5 h-5" />
