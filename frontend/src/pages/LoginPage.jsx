@@ -50,8 +50,8 @@ const LoginPage = ({ onLogin }) => {
         <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md">
           {/* Icon */}
           <div className="flex justify-center mb-6">
-            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
-              <User className="w-8 h-8 text-orange-500" />
+            <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: 'rgba(249, 99, 2, 0.1)' }}>
+              <User className="w-8 h-8" style={{ color: '#F96302' }} />
             </div>
           </div>
 
