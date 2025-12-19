@@ -765,7 +765,7 @@ const DashboardPage = ({ user, onLogout }) => {
         claimNumber,
         compensationAmount,
         policyNumber: user.policy_number,
-        currency: "S$",
+        currency: "$",
       },
     });
 
@@ -934,7 +934,7 @@ const DashboardPage = ({ user, onLogout }) => {
         claimNumber,
         compensationAmount,
         policyNumber: user.policy_number,
-        currency: "S$",
+        currency: "$",
       },
     });
 
@@ -1302,7 +1302,7 @@ const DashboardPage = ({ user, onLogout }) => {
         claimNumber,
         compensationAmount,
         policyNumber: user.policy_number,
-        currency: "S$",
+        currency: "$",
       },
     });
 
@@ -1488,7 +1488,7 @@ const DashboardPage = ({ user, onLogout }) => {
         claimNumber,
         compensationAmount,
         policyNumber: user.policy_number,
-        currency: "S$",
+        currency: "$",
       },
     });
 
@@ -1674,7 +1674,7 @@ const DashboardPage = ({ user, onLogout }) => {
         claimNumber,
         compensationAmount,
         policyNumber: user.policy_number,
-        currency: "S$",
+        currency: "$",
       },
     });
 
@@ -1852,7 +1852,7 @@ const DashboardPage = ({ user, onLogout }) => {
         claimNumber,
         compensationAmount,
         policyNumber: user.policy_number,
-        currency: "S$",
+        currency: "$",
       },
     });
 
@@ -2123,7 +2123,7 @@ const DashboardPage = ({ user, onLogout }) => {
         claimNumber,
         compensationAmount,
         policyNumber: user.policy_number,
-        currency: "S$",
+        currency: "$",
       },
     });
 
@@ -2325,7 +2325,7 @@ const DashboardPage = ({ user, onLogout }) => {
         claimNumber,
         compensationAmount,
         policyNumber: user.policy_number,
-        currency: "S$",
+        currency: "$",
       },
     });
 
@@ -2548,7 +2548,7 @@ const DashboardPage = ({ user, onLogout }) => {
         claimNumber,
         compensationAmount,
         policyNumber: user.policy_number,
-        currency: "S$",
+        currency: "$",
       },
     });
 
@@ -2853,7 +2853,7 @@ const DashboardPage = ({ user, onLogout }) => {
                 </div>
                 <div className="flex justify-between pt-2 bg-green-50 -mx-4 px-4 py-3 -mb-4 rounded-b-lg">
                   <span className="text-gray-700 font-semibold">Claim Payment Amount:</span>
-                  <span className="font-bold text-green-600 text-xl">S$ {message.data.compensationAmount.toFixed(2)}</span>
+                  <span className="font-bold text-green-600 text-xl">$ {message.data.compensationAmount.toFixed(2)}</span>
                 </div>
               </div>
             </div>
