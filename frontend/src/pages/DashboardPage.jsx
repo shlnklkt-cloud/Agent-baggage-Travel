@@ -340,14 +340,6 @@ const DashboardPage = ({ user, onLogout }) => {
       addMessage({
         type: "agent",
         agent: "trip-change",
-        content: "Hello! I'm the Trip Cancellation Claims Agent. I can help you file a claim for non-refundable expenses due to trip cancellation.",
-      });
-
-      await delay(1500);
-
-      addMessage({
-        type: "agent",
-        agent: "trip-change",
         content: "Our records indicate that you are travelling on flight SQ892 from Singapore (SIN) to Hong Kong (HKG).",
       });
 
