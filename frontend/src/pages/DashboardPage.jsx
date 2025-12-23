@@ -49,7 +49,7 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "agent",
       agent: "orchestrator",
-      content: `Welcome back, ${user.name}! I'm Jiffy Jane, your Claims Assistant. I can see your policy is active.`,
+      content: `Hi ${user.name}! I'm Jiffy Jane, your Claims Assistant. I can see your policy is active.`,
     });
 
     await delay(1500);
@@ -2384,7 +2384,7 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "agent",
       agent: "orchestrator",
-      content: `Welcome back, ${user.name}! I'm Jiffy Jane, your Claims Assistant. I can see your policy is active.`,
+      content: `Hi ${user.name}! I'm Jiffy Jane, your Claims Assistant. I can see your policy is active.`,
     });
 
     await delay(1500);
