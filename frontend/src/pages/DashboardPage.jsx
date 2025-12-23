@@ -36,6 +36,17 @@ const DashboardPage = ({ user, onLogout }) => {
   }, [messages]);
 
   useEffect(() => {
+    // Wake up backend immediately on component mount
+    const wakeUpBackend = async () => {
+      try {
+        await axios.get(`${API}/`);
+      } catch (error) {
+        console.log("Backend wake-up call made");
+      }
+    };
+    
+    wakeUpBackend();
+    
     if (!initializedRef.current && messages.length === 0) {
       initializedRef.current = true;
       initializeChat();
