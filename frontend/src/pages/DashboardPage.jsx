@@ -106,9 +106,8 @@ const DashboardPage = ({ user, onLogout }) => {
       await delay(1000);
 
       addMessage({
-        type: "agent",
-        agent: "baggage",
-        content: "Hello! I'm the Baggage Claims Agent. Let me pull up your travel itinerary to assist you better.",
+        type: "system",
+        content: "Baggage Claims Agent Activated",
       });
 
       try {
@@ -120,7 +119,7 @@ const DashboardPage = ({ user, onLogout }) => {
         addMessage({
           type: "agent",
           agent: "baggage",
-          content: "Here is your travel itinerary:",
+          content: "Please select the flight from your travel itinerary for which your baggage was delayed, then click \"Proceed.\"",
         });
 
         await delay(500);
@@ -128,14 +127,6 @@ const DashboardPage = ({ user, onLogout }) => {
         addMessage({
           type: "itinerary",
           data: response.data,
-        });
-
-        await delay(1000);
-
-        addMessage({
-          type: "agent",
-          agent: "baggage",
-          content: "Please select the flight where your baggage was delayed and click 'Confirm Selection':",
         });
 
         setCurrentStep("select-flight");
