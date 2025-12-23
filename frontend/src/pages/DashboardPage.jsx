@@ -2821,7 +2821,7 @@ const DashboardPage = ({ user, onLogout }) => {
         return (
           <div key={message.id} className="ml-13 mb-4">
             <div className="bg-white border border-gray-300 rounded-lg overflow-hidden max-w-lg shadow-md">
-              <div className="bg-orange-500 text-white px-4 py-3">
+              <div style={{ backgroundColor: '#FF7E00' }} className="text-white px-4 py-3">
                 <h3 className="font-bold text-lg">Claim Summary</h3>
               </div>
               <div className="p-4 space-y-3">
