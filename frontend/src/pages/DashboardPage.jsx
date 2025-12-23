@@ -165,7 +165,7 @@ const DashboardPage = ({ user, onLogout }) => {
       addMessage({
         type: "agent",
         agent: "documents",
-        content: "Hello! I'm the Document Claims Agent. I can help you with claims for lost travel documents such as passports, visas, or other important travel paperwork.",
+        content: "I'm sorry to hear that your travel documents have been lost.",
       });
 
       await delay(1500);
