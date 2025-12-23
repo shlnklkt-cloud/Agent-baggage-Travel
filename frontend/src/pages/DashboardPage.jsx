@@ -208,7 +208,7 @@ const DashboardPage = ({ user, onLogout }) => {
       addMessage({
         type: "agent",
         agent: "medical",
-        content: "Hello! I'm the Medical Claims Agent. I'm here to assist you with claims related to medical emergencies during your travel.",
+        content: "I'm sorry to hear that you experienced a medical emergency during your travels.",
       });
 
       await delay(1500);
