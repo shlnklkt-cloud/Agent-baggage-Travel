@@ -103,13 +103,6 @@ const DashboardPage = ({ user, onLogout }) => {
         content: "Baggage Claims Agent Activated",
       });
 
-      await delay(1000);
-
-      addMessage({
-        type: "system",
-        content: "Baggage Claims Agent Activated",
-      });
-
       try {
         const response = await axios.get(`${API}/itinerary/${user.passport_number}`);
         setItinerary(response.data);
