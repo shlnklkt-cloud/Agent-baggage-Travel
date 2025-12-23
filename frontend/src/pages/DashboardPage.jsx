@@ -97,6 +97,12 @@ const DashboardPage = ({ user, onLogout }) => {
     return `CLM-TRV-2026-${random}`;
   };
 
+  const getYesterdayDate = () => {
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    return yesterday;
+  };
+
   const handleOptionClick = async (option) => {
     if (option === "baggage") {
       addMessage({
