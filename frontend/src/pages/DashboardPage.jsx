@@ -410,14 +410,6 @@ const DashboardPage = ({ user, onLogout }) => {
       addMessage({
         type: "agent",
         agent: "trip-disruption",
-        content: "Hello! I'm the Trip Disruption Claims Agent. I can help you file a claim for expenses incurred due to trip disruptions such as flight delays, missed connections, or other unforeseen circumstances.",
-      });
-
-      await delay(1500);
-
-      addMessage({
-        type: "agent",
-        agent: "trip-disruption",
         content: "Our records indicate that you are travelling on flight SQ637 from Tokyo Narita (NRT) to Singapore (SIN).",
       });
 
