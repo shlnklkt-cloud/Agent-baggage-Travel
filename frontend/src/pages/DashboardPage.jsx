@@ -375,14 +375,6 @@ const DashboardPage = ({ user, onLogout }) => {
       addMessage({
         type: "agent",
         agent: "trip-change",
-        content: "Hello! I'm the Trip Shortening Claims Agent. I can help you file a claim for expenses incurred due to cutting your trip short.",
-      });
-
-      await delay(1500);
-
-      addMessage({
-        type: "agent",
-        agent: "trip-change",
         content: "Our records indicate that you are travelling on flight SQ894 from Singapore (SIN) to Tokyo Haneda (HND).",
       });
 
