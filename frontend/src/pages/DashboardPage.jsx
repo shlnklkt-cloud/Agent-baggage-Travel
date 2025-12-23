@@ -3208,14 +3208,6 @@ const DashboardPage = ({ user, onLogout }) => {
                   <span className="text-gray-700">Passport</span>
                 </button>
                 <button
-                  onClick={() => handleDocumentTypeSelect("visa")}
-                  className="flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-4 py-2 hover:bg-blue-50 hover:border-blue-300 transition-colors"
-                  data-testid="visa-btn"
-                >
-                  <FileText className="w-4 h-4 text-blue-600" />
-                  <span className="text-gray-700">Visa</span>
-                </button>
-                <button
                   onClick={() => handleDocumentTypeSelect("other")}
                   className="flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-4 py-2 hover:bg-blue-50 hover:border-blue-300 transition-colors"
                   data-testid="other-document-btn"
