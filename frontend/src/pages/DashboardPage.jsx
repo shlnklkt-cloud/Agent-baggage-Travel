@@ -2826,12 +2826,8 @@ const DashboardPage = ({ user, onLogout }) => {
               </div>
               <div className="p-4 space-y-3">
                 <div className="flex justify-between border-b pb-2">
-                  <span className="text-gray-600">Claim Type:</span>
-                  <span className="font-semibold text-gray-800">{message.data.claimType}</span>
-                </div>
-                <div className="flex justify-between border-b pb-2">
-                  <span className="text-gray-600">Claim Intimation Date:</span>
-                  <span className="font-semibold text-gray-800">{message.data.claimIntimationDate}</span>
+                  <span className="text-gray-600">Policy Number:</span>
+                  <span className="font-semibold text-gray-800">{message.data.policyNumber}</span>
                 </div>
                 <div className="flex justify-between border-b pb-2">
                   <span className="text-gray-600">Claim Reference Number:</span>
@@ -2846,8 +2842,12 @@ const DashboardPage = ({ user, onLogout }) => {
                   <span className="font-semibold text-gray-800 text-right max-w-xs">{message.data.reason}</span>
                 </div>
                 <div className="flex justify-between border-b pb-2">
-                  <span className="text-gray-600">Policy Number:</span>
-                  <span className="font-semibold text-gray-800">{message.data.policyNumber}</span>
+                  <span className="text-gray-600">Claim Type:</span>
+                  <span className="font-semibold text-gray-800">{message.data.claimType}</span>
+                </div>
+                <div className="flex justify-between border-b pb-2">
+                  <span className="text-gray-600">Claim Intimation Date:</span>
+                  <span className="font-semibold text-gray-800">{message.data.claimIntimationDate}</span>
                 </div>
                 <div className="flex justify-between pt-2 bg-green-50 -mx-4 px-4 py-3 -mb-4 rounded-b-lg">
                   <span className="text-gray-700 font-semibold">Claim Payment Amount:</span>
