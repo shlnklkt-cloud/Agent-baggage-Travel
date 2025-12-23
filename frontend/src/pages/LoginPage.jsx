@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { User, FileText } from "lucide-react";
 
@@ -10,6 +10,20 @@ const LoginPage = ({ onLogin }) => {
   const [policyNumber, setPolicyNumber] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+
+  // Wake up backend on page load
+  useEffect(() => {
+    const wakeUpBackend = async () => {
+      try {
+        await axios.get(`${API}/`, { timeout: 5000 });
+        console.log("Backend is ready");
+      } catch (error) {
+        console.log("Backend wake-up initiated");
+      }
+    };
+    
+    wakeUpBackend();
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
