@@ -3123,7 +3123,7 @@ const DashboardPage = ({ user, onLogout }) => {
                   data-testid="confirm-flight-baggage-loss-btn"
                 >
                   <CheckCircle className="w-5 h-5" />
-                  <span className="font-medium">Confirm Selection</span>
+                  <span className="font-medium">Proceed</span>
                 </button>
               </div>
             )}
