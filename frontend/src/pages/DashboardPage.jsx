@@ -240,7 +240,7 @@ const DashboardPage = ({ user, onLogout }) => {
       addMessage({
         type: "agent",
         agent: "baggage-loss",
-        content: "Hello! I'm the Baggage Loss/Damage Claims Agent. Let me pull up your travel itinerary to assist you better.",
+        content: "I am sorry to hear that your baggage has been lost.",
       });
 
       try {
@@ -252,7 +252,7 @@ const DashboardPage = ({ user, onLogout }) => {
         addMessage({
           type: "agent",
           agent: "baggage-loss",
-          content: "Here is your travel itinerary:",
+          content: "Please select the flight where your baggage was lost or damaged then click \"Proceed\"",
         });
 
         await delay(500);
@@ -260,14 +260,6 @@ const DashboardPage = ({ user, onLogout }) => {
         addMessage({
           type: "itinerary",
           data: response.data,
-        });
-
-        await delay(1000);
-
-        addMessage({
-          type: "agent",
-          agent: "baggage-loss",
-          content: "Please select the flight where your baggage was lost or damaged and click 'Confirm Selection':",
         });
 
         setCurrentStep("select-flight-baggage-loss");
