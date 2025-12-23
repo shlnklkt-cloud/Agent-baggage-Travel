@@ -636,7 +636,7 @@ const DashboardPage = ({ user, onLogout }) => {
     // Generate claim number
     const claimNumber = generateClaimNumber();
     const compensationAmount = Math.floor(delayHours / 6) * 200;
-    const incidentDate = new Date();
+    const incidentDate = getYesterdayDate();
     incidentDate.setHours(incidentDate.getHours() - delayHours);
 
     setClaimData({
