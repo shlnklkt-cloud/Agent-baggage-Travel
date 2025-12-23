@@ -2214,7 +2214,7 @@ const DashboardPage = ({ user, onLogout }) => {
       data: {
         claimNumber,
         delayHours: null,
-        flightNumber: "Medical Emergency Claim",
+        flightNumber: "Medical Expense Claim",
       },
     });
 
@@ -2298,7 +2298,7 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "claim-summary",
       data: {
-        claimType: "Medical Emergency",
+        claimType: "Medical Expense",
         claimIntimationDate: new Date().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
