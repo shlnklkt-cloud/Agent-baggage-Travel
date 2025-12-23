@@ -187,10 +187,10 @@ const DashboardPage = ({ user, onLogout }) => {
       setIsTyping(false);
       setCurrentStep("select-document-type");
     } else if (option === "medical") {
-      // Medical Emergencies Flow
+      // Medical Expenses Flow
       addMessage({
         type: "user",
-        content: "Medical Emergencies",
+        content: "Medical Expenses",
       });
 
       setCurrentStep("medical-flow");
@@ -3023,7 +3023,7 @@ const DashboardPage = ({ user, onLogout }) => {
                   data-testid="medical-emergency-btn"
                 >
                   <AlertTriangle className="w-4 h-4 text-gray-600" />
-                  <span className="text-gray-700">Medical Emergencies</span>
+                  <span className="text-gray-700">Medical Expenses</span>
                 </button>
                 <button
                   onClick={() => handleOptionClick("postpone-trip")}
