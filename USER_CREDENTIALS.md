@@ -50,7 +50,7 @@
 
 #### 7. Sophia Poh
 - **Passport/NRIC:** `CSGHY304JK`
-- **Policy Number:** `INC-TRV-2024-79747`
+- **Policy Number:** `TRV-2024-79747`
 - **Policy Type:** Income Travel Insurance - Premier Plan
 - **Status:** ACTIVE
 - **Travel Itinerary:** SIN → NRT (SQ828), NRT → SIN (SQ829)
