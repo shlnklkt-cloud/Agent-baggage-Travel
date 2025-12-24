@@ -158,7 +158,7 @@ const LoginPage = ({ onLogin }) => {
               Passport: <code className="bg-purple-100 px-2 py-0.5 rounded text-purple-700">CSGHY623JK</code>
             </p>
             <p className="text-sm text-gray-600">
-              Policy: <code className="bg-purple-100 px-2 py-0.5 rounded text-purple-700">INC-TRV-2024-79045</code>
+              Policy: <code className="bg-purple-100 px-2 py-0.5 rounded text-purple-700">TRV-2024-79045</code>
             </p>
           </div>
         </div>
