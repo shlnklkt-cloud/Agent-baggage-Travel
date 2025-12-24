@@ -256,6 +256,22 @@ def get_dynamic_itinerary():
                 "airline": "Singapore Airlines",
                 "journey_type": "Return"
             }
+        ],
+        "CSBNY384JK": [
+            {
+                "flight_number": "SQ322",
+                "route": "SIN → LHR",
+                "date": today_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Outward"
+            },
+            {
+                "flight_number": "SQ321",
+                "route": "LHR → SIN",
+                "date": future_str,
+                "airline": "Singapore Airlines",
+                "journey_type": "Return"
+            }
         ]
     }
 
