@@ -2142,7 +2142,7 @@ const DashboardPage = ({ user, onLogout }) => {
       hospitalization: "Hospitalization",
       outpatient: "Outpatient Treatment",
       emergency: "Emergency Treatment",
-      medication: "Medication Purchase",
+      medication: "Medication",
     };
 
     addMessage({
