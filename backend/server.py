@@ -113,6 +113,13 @@ TEST_USERS = {
         "policy_number": "INC-TRV-2024-79747",
         "policy_type": "Income Travel Insurance - Premier Plan",
         "policy_status": "ACTIVE"
+    },
+    "CSBNY384JK": {
+        "name": "Emily Wong",
+        "passport_number": "CSBNY384JK",
+        "policy_number": "INC-TRV-2024-79048",
+        "policy_type": "Income Travel Insurance - Premier Plan",
+        "policy_status": "ACTIVE"
     }
 }
 
