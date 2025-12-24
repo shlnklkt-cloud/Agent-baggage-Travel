@@ -3225,7 +3225,7 @@ const DashboardPage = ({ user, onLogout }) => {
                   data-testid="medication-btn"
                 >
                   <AlertTriangle className="w-4 h-4 text-red-600" />
-                  <span className="text-gray-700">Medication Purchase</span>
+                  <span className="text-gray-700">Medication</span>
                 </button>
               </div>
             )}
