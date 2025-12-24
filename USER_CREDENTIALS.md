@@ -43,7 +43,7 @@
 
 #### 6. Kelly Pan
 - **Passport/NRIC:** `CSGHY224JK`
-- **Policy Number:** `INC-TRV-2024-78946`
+- **Policy Number:** `TRV-2024-78946`
 - **Policy Type:** Income Travel Insurance - Premier Plan
 - **Status:** ACTIVE
 - **Travel Itinerary:** SIN → CDG (SQ231), CDG → SIN (SQ232)
