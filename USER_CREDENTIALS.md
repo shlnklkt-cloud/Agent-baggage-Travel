@@ -36,7 +36,7 @@
 
 #### 5. Elizabeth Choy
 - **Passport/NRIC:** `CSGHY664JK`
-- **Policy Number:** `INC-TRV-2024-79245`
+- **Policy Number:** `TRV-2024-79245`
 - **Policy Type:** Income Travel Insurance - Premier Plan
 - **Status:** ACTIVE
 - **Travel Itinerary:** SIN → HKG (SQ254), HKG → SIN (SQ255)
