@@ -89,35 +89,35 @@ TEST_USERS = {
     "CSGHY622JK": {
         "name": "Cheryl Chan",
         "passport_number": "CSGHY622JK",
-        "policy_number": "INC-TRV-2024-79145",
+        "policy_number": "TRV-2024-79145",
         "policy_type": "Income Travel Insurance - Premier Plan",
         "policy_status": "ACTIVE"
     },
     "CSGHY664JK": {
         "name": "Elizabeth Choy",
         "passport_number": "CSGHY664JK",
-        "policy_number": "INC-TRV-2024-79245",
+        "policy_number": "TRV-2024-79245",
         "policy_type": "Income Travel Insurance - Premier Plan",
         "policy_status": "ACTIVE"
     },
     "CSGHY224JK": {
         "name": "Kelly Pan",
         "passport_number": "CSGHY224JK",
-        "policy_number": "INC-TRV-2024-78946",
+        "policy_number": "TRV-2024-78946",
         "policy_type": "Income Travel Insurance - Premier Plan",
         "policy_status": "ACTIVE"
     },
     "CSGHY304JK": {
         "name": "Sophia Poh",
         "passport_number": "CSGHY304JK",
-        "policy_number": "INC-TRV-2024-79747",
+        "policy_number": "TRV-2024-79747",
         "policy_type": "Income Travel Insurance - Premier Plan",
         "policy_status": "ACTIVE"
     },
     "CSBNY384JK": {
         "name": "Emily Wong",
         "passport_number": "CSBNY384JK",
-        "policy_number": "INC-TRV-2024-79048",
+        "policy_number": "TRV-2024-79048",
         "policy_type": "Income Travel Insurance - Premier Plan",
         "policy_status": "ACTIVE"
     }
