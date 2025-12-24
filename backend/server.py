@@ -82,7 +82,7 @@ TEST_USERS = {
     "CSGHY623JK": {
         "name": "Mei Ling Chen",
         "passport_number": "CSGHY623JK",
-        "policy_number": "INC-TRV-2024-79045",
+        "policy_number": "TRV-2024-79045",
         "policy_type": "Income Travel Insurance - Premier Plan",
         "policy_status": "ACTIVE"
     },
