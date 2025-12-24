@@ -29,7 +29,7 @@
 
 #### 4. Cheryl Chan
 - **Passport/NRIC:** `CSGHY622JK`
-- **Policy Number:** `INC-TRV-2024-79145`
+- **Policy Number:** `TRV-2024-79145`
 - **Policy Type:** Income Travel Insurance - Premier Plan
 - **Status:** ACTIVE
 - **Travel Itinerary:** SIN → SYD (SQ178), SYD → SIN (SQ179)
