@@ -1866,7 +1866,7 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "agent",
       agent: "orchestrator",
-      content: "Your **trip disruption** claim has been successfully processed! The claim payment will be transferred to your registered bank account within 1-2 business days. Is there anything else I can help you with?",
+      content: "Your **Trip Disruption** claim has been successfully processed! The claim payment will be transferred to your registered bank account within 1-2 business days. Is there anything else I can help you with?",
     });
 
     setIsTyping(false);
