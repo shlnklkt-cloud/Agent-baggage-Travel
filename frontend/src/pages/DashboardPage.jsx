@@ -103,6 +103,14 @@ const DashboardPage = ({ user, onLogout }) => {
     return yesterday;
   };
 
+  const getClaimIntimationDate = () => {
+    const intimationDate = getYesterdayDate();
+    // Add 29 hours and 33 minutes to incident date
+    intimationDate.setHours(intimationDate.getHours() + 29);
+    intimationDate.setMinutes(intimationDate.getMinutes() + 33);
+    return intimationDate;
+  };
+
   const handleOptionClick = async (option) => {
     if (option === "baggage") {
       addMessage({
