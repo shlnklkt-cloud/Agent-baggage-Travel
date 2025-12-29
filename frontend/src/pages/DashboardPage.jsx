@@ -2603,7 +2603,9 @@ const DashboardPage = ({ user, onLogout }) => {
                 {colors.name}
               </p>
               <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-100">
-                <p className="text-gray-700">{message.content}</p>
+                <p className="text-gray-700" dangerouslySetInnerHTML={{ 
+                  __html: message.content.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') 
+                }} />
               </div>
             </div>
           </div>
