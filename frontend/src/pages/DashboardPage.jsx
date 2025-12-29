@@ -754,7 +754,7 @@ const DashboardPage = ({ user, onLogout }) => {
       type: "claim-summary",
       data: {
         claimType: "Baggage Delay",
-        claimIntimationDate: new Date().toLocaleDateString('en-SG', { 
+        claimIntimationDate: getClaimIntimationDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -922,7 +922,7 @@ const DashboardPage = ({ user, onLogout }) => {
       type: "claim-summary",
       data: {
         claimType: "Baggage Loss/Damage",
-        claimIntimationDate: new Date().toLocaleDateString('en-SG', { 
+        claimIntimationDate: getClaimIntimationDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -1290,7 +1290,7 @@ const DashboardPage = ({ user, onLogout }) => {
       type: "claim-summary",
       data: {
         claimType: "Trip Postponement",
-        claimIntimationDate: new Date().toLocaleDateString('en-SG', { 
+        claimIntimationDate: getClaimIntimationDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -1476,7 +1476,7 @@ const DashboardPage = ({ user, onLogout }) => {
       type: "claim-summary",
       data: {
         claimType: "Trip Cancellation",
-        claimIntimationDate: new Date().toLocaleDateString('en-SG', { 
+        claimIntimationDate: getClaimIntimationDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -1662,7 +1662,7 @@ const DashboardPage = ({ user, onLogout }) => {
       type: "claim-summary",
       data: {
         claimType: "Trip Shortening",
-        claimIntimationDate: new Date().toLocaleDateString('en-SG', { 
+        claimIntimationDate: getClaimIntimationDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -1840,7 +1840,7 @@ const DashboardPage = ({ user, onLogout }) => {
       type: "claim-summary",
       data: {
         claimType: "Trip Disruption",
-        claimIntimationDate: new Date().toLocaleDateString('en-SG', { 
+        claimIntimationDate: getClaimIntimationDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -2111,7 +2111,7 @@ const DashboardPage = ({ user, onLogout }) => {
       type: "claim-summary",
       data: {
         claimType: "Lost Travel Documents",
-        claimIntimationDate: new Date().toLocaleDateString('en-SG', { 
+        claimIntimationDate: getClaimIntimationDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -2313,7 +2313,7 @@ const DashboardPage = ({ user, onLogout }) => {
       type: "claim-summary",
       data: {
         claimType: "Medical Expense",
-        claimIntimationDate: new Date().toLocaleDateString('en-SG', { 
+        claimIntimationDate: getClaimIntimationDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -2536,7 +2536,7 @@ const DashboardPage = ({ user, onLogout }) => {
       type: "claim-summary",
       data: {
         claimType: claimInfo.type,
-        claimIntimationDate: new Date().toLocaleDateString('en-SG', { 
+        claimIntimationDate: getClaimIntimationDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
