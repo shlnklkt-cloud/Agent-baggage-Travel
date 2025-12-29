@@ -772,7 +772,7 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "agent",
       agent: "orchestrator",
-      content: "Your baggage delay claim has been successfully processed! The claim payment will be transferred to your registered bank account within 3-5 business days. Is there anything else I can help you with?",
+      content: "Your baggage delay claim has been successfully processed! The claim payment will be transferred to your registered bank account within 1-2 business days. Is there anything else I can help you with?",
     });
 
     setIsTyping(false);
@@ -940,7 +940,7 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "agent",
       agent: "orchestrator",
-      content: "Your baggage loss/damage claim has been successfully processed! The claim payment will be transferred to your registered bank account within 3-5 business days. Is there anything else I can help you with?",
+      content: "Your baggage loss/damage claim has been successfully processed! The claim payment will be transferred to your registered bank account within 1-2 business days. Is there anything else I can help you with?",
     });
 
     setIsTyping(false);
@@ -1308,7 +1308,7 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "agent",
       agent: "orchestrator",
-      content: "Your trip postponement claim has been successfully processed! The claim payment will be transferred to your registered bank account within 3-5 business days. Is there anything else I can help you with?",
+      content: "Your trip postponement claim has been successfully processed! The claim payment will be transferred to your registered bank account within 1-2 business days. Is there anything else I can help you with?",
     });
 
     setIsTyping(false);
@@ -1494,7 +1494,7 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "agent",
       agent: "orchestrator",
-      content: "Your trip cancellation claim has been successfully processed! The claim payment will be transferred to your registered bank account within 3-5 business days. Is there anything else I can help you with?",
+      content: "Your trip cancellation claim has been successfully processed! The claim payment will be transferred to your registered bank account within 1-2 business days. Is there anything else I can help you with?",
     });
 
     setIsTyping(false);
@@ -1680,7 +1680,7 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "agent",
       agent: "orchestrator",
-      content: "Your trip shortening claim has been successfully processed! The claim payment will be transferred to your registered bank account within 3-5 business days. Is there anything else I can help you with?",
+      content: "Your trip shortening claim has been successfully processed! The claim payment will be transferred to your registered bank account within 1-2 business days. Is there anything else I can help you with?",
     });
 
     setIsTyping(false);
@@ -1858,7 +1858,7 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "agent",
       agent: "orchestrator",
-      content: "Your trip disruption claim has been successfully processed! The claim payment will be transferred to your registered bank account within 3-5 business days. Is there anything else I can help you with?",
+      content: "Your trip disruption claim has been successfully processed! The claim payment will be transferred to your registered bank account within 1-2 business days. Is there anything else I can help you with?",
     });
 
     setIsTyping(false);
@@ -2129,7 +2129,7 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "agent",
       agent: "orchestrator",
-      content: "Your lost document claim has been successfully processed! The claim payment will be transferred to your registered bank account within 3-5 business days. Is there anything else I can help you with?",
+      content: "Your lost document claim has been successfully processed! The claim payment will be transferred to your registered bank account within 1-2 business days. Is there anything else I can help you with?",
     });
 
     setIsTyping(false);
@@ -2331,7 +2331,7 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "agent",
       agent: "orchestrator",
-      content: "Your medical emergency claim has been successfully processed! The claim payment will be transferred to your registered bank account within 3-5 business days. Is there anything else I can help you with?",
+      content: "Your medical emergency claim has been successfully processed! The claim payment will be transferred to your registered bank account within 1-2 business days. Is there anything else I can help you with?",
     });
 
     setIsTyping(false);
@@ -2554,7 +2554,7 @@ const DashboardPage = ({ user, onLogout }) => {
     addMessage({
       type: "agent",
       agent: "orchestrator",
-      content: `Your ${claimInfo.type.toLowerCase()} claim has been successfully processed! The claim payment will be transferred to your registered bank account within 3-5 business days. Is there anything else I can help you with?`,
+      content: `Your ${claimInfo.type.toLowerCase()} claim has been successfully processed! The claim payment will be transferred to your registered bank account within 1-2 business days. Is there anything else I can help you with?`,
     });
 
     setIsTyping(false);
