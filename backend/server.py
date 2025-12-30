@@ -94,35 +94,40 @@ TEST_USERS = {
         "passport_number": "CSGHY622JK",
         "policy_number": "TRV-2024-79145",
         "policy_type": "Income Travel Insurance - Premier Plan",
-        "policy_status": "ACTIVE"
+        "policy_status": "ACTIVE",
+        "profile_picture": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100"
     },
     "CSGHY664JK": {
         "name": "Elizabeth Choy",
         "passport_number": "CSGHY664JK",
         "policy_number": "TRV-2024-79245",
         "policy_type": "Income Travel Insurance - Premier Plan",
-        "policy_status": "ACTIVE"
+        "policy_status": "ACTIVE",
+        "profile_picture": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100"
     },
     "CSGHY224JK": {
         "name": "Kelly Pan",
         "passport_number": "CSGHY224JK",
         "policy_number": "TRV-2024-78946",
         "policy_type": "Income Travel Insurance - Premier Plan",
-        "policy_status": "ACTIVE"
+        "policy_status": "ACTIVE",
+        "profile_picture": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100"
     },
     "CSGHY304JK": {
         "name": "Sophia Poh",
         "passport_number": "CSGHY304JK",
         "policy_number": "TRV-2024-79747",
         "policy_type": "Income Travel Insurance - Premier Plan",
-        "policy_status": "ACTIVE"
+        "policy_status": "ACTIVE",
+        "profile_picture": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100"
     },
     "CSBNY384JK": {
         "name": "Emily Wong",
         "passport_number": "CSBNY384JK",
         "policy_number": "TRV-2024-79048",
         "policy_type": "Income Travel Insurance - Premier Plan",
-        "policy_status": "ACTIVE"
+        "policy_status": "ACTIVE",
+        "profile_picture": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100"
     }
 }
 
