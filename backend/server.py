@@ -70,14 +70,16 @@ TEST_USERS = {
         "passport_number": "CSGHY654JK",
         "policy_number": "TRV-2026-001487",
         "policy_type": "Income Travel Insurance - Premier Plan",
-        "policy_status": "ACTIVE"
+        "policy_status": "ACTIVE",
+        "profile_picture": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100"
     },
     "CSGHY456JK": {
         "name": "Broker Account",
         "passport_number": "CSGHY456JK",
         "policy_number": "TRV-2026-001687",
         "policy_type": "Income Travel Insurance - Business Plan",
-        "policy_status": "ACTIVE"
+        "policy_status": "ACTIVE",
+        "profile_picture": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100"
     },
     "CSGHY623JK": {
         "name": "Mei Ling Chen",
