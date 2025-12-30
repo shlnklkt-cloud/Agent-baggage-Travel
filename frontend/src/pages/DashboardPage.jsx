@@ -97,18 +97,17 @@ const DashboardPage = ({ user, onLogout }) => {
     return `CLM-TRV-2026-${random}`;
   };
 
-  const getYesterdayDate = () => {
-    const yesterday = new Date();
-    yesterday.setDate(yesterday.getDate() - 1);
-    return yesterday;
+  const getClaimIntimationDate = () => {
+    // Claim Intimation Date = Current system date/time
+    return new Date();
   };
 
-  const getClaimIntimationDate = () => {
-    const intimationDate = getYesterdayDate();
-    // Add 29 hours and 33 minutes to incident date
-    intimationDate.setHours(intimationDate.getHours() + 29);
-    intimationDate.setMinutes(intimationDate.getMinutes() + 33);
-    return intimationDate;
+  const getIncidentDate = () => {
+    // Incident Date = Intimation Date - 27 hours 27 minutes
+    const incidentDate = new Date();
+    incidentDate.setHours(incidentDate.getHours() - 27);
+    incidentDate.setMinutes(incidentDate.getMinutes() - 27);
+    return incidentDate;
   };
 
   const handleOptionClick = async (option) => {
