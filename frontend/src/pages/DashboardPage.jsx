@@ -2972,7 +2972,7 @@ const DashboardPage = ({ user, onLogout }) => {
             </div>
             <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white">
               <img
-                src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100"
+                src={user.profile_picture || "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100"}
                 alt="User"
                 className="w-full h-full object-cover"
               />
