@@ -643,9 +643,11 @@ const DashboardPage = ({ user, onLogout }) => {
     // Generate claim number
     const claimNumber = generateClaimNumber();
     const compensationAmount = Math.floor(delayHours / 6) * 200;
-    const incidentDate = getYesterdayDate();
-    incidentDate.setHours(incidentDate.getHours() - delayHours);
-
+    const incidentDate = getIncidentDate();
+    // Incident date is already calculated as current time - 27 hours 27 minutes
+    // But for baggage delay, we might need to adjust based on delayHours
+    // For now keeping the base incident date
+    
     setClaimData({
       claimNumber,
       compensationAmount,
