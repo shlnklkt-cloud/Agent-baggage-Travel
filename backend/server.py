@@ -119,7 +119,7 @@ TEST_USERS = {
         "policy_number": "TRV-2024-79747",
         "policy_type": "Income Travel Insurance - Premier Plan",
         "policy_status": "ACTIVE",
-        "profile_picture": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100"
+        "profile_picture": "https://customer-assets.emergentagent.com/job_luggage-tracker-4/artifacts/yvh0v1aj_image.png"
     },
     "CSBNY384JK": {
         "name": "Emily Wong",
