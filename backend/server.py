@@ -84,7 +84,8 @@ TEST_USERS = {
         "passport_number": "CSGHY623JK",
         "policy_number": "TRV-2024-79045",
         "policy_type": "Income Travel Insurance - Premier Plan",
-        "policy_status": "ACTIVE"
+        "policy_status": "ACTIVE",
+        "profile_picture": "https://customer-assets.emergentagent.com/job_luggage-tracker-4/artifacts/m0pa53hq_image.png"
     },
     "CSGHY622JK": {
         "name": "Cheryl Chan",
