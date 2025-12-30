@@ -929,7 +929,7 @@ const DashboardPage = ({ user, onLogout }) => {
           minute: '2-digit'
         }),
         claimReferenceNumber: claimNumber,
-        incidentDateTime: getYesterdayDate().toLocaleDateString('en-SG', { 
+        incidentDateTime: getIncidentDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -1297,7 +1297,7 @@ const DashboardPage = ({ user, onLogout }) => {
           minute: '2-digit'
         }),
         claimReferenceNumber: claimNumber,
-        incidentDateTime: getYesterdayDate().toLocaleDateString('en-SG', { 
+        incidentDateTime: getIncidentDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -1483,7 +1483,7 @@ const DashboardPage = ({ user, onLogout }) => {
           minute: '2-digit'
         }),
         claimReferenceNumber: claimNumber,
-        incidentDateTime: getYesterdayDate().toLocaleDateString('en-SG', { 
+        incidentDateTime: getIncidentDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -1669,7 +1669,7 @@ const DashboardPage = ({ user, onLogout }) => {
           minute: '2-digit'
         }),
         claimReferenceNumber: claimNumber,
-        incidentDateTime: getYesterdayDate().toLocaleDateString('en-SG', { 
+        incidentDateTime: getIncidentDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -1847,7 +1847,7 @@ const DashboardPage = ({ user, onLogout }) => {
           minute: '2-digit'
         }),
         claimReferenceNumber: claimNumber,
-        incidentDateTime: getYesterdayDate().toLocaleDateString('en-SG', { 
+        incidentDateTime: getIncidentDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -2118,7 +2118,7 @@ const DashboardPage = ({ user, onLogout }) => {
           minute: '2-digit'
         }),
         claimReferenceNumber: claimNumber,
-        incidentDateTime: getYesterdayDate().toLocaleDateString('en-SG', { 
+        incidentDateTime: getIncidentDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -2320,7 +2320,7 @@ const DashboardPage = ({ user, onLogout }) => {
           minute: '2-digit'
         }),
         claimReferenceNumber: claimNumber,
-        incidentDateTime: getYesterdayDate().toLocaleDateString('en-SG', { 
+        incidentDateTime: getIncidentDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
@@ -2543,7 +2543,7 @@ const DashboardPage = ({ user, onLogout }) => {
           minute: '2-digit'
         }),
         claimReferenceNumber: claimNumber,
-        incidentDateTime: getYesterdayDate().toLocaleDateString('en-SG', { 
+        incidentDateTime: getIncidentDate().toLocaleDateString('en-SG', { 
           day: '2-digit', 
           month: 'short', 
           year: 'numeric',
